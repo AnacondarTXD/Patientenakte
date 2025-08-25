@@ -1,0 +1,46 @@
+###
+GET http://localhost:8080/api/v1/patientenakte/1
+
+###
+GET http://localhost:8080/api/v1/patientenakte
+
+###
+POST http://localhost:8080/api/v1/patientenakte
+Content-Type: application/json
+
+{
+  "vorname": "Thomas",
+  "nachname": "Müller",
+  "geburtsdatum": "15.10.1990",
+  "geschlecht": "mannlich",
+  "gewicht": 90,
+  "groesse": 170,
+  "blutgruppe": "AB+"
+}
+
+###
+POST http://localhost:8080/api/v1/patientenakte
+Content-Type: application/json
+
+{
+  "vorname": "Anna",
+  "nachname": "Schmidt",
+  "geburtsdatum": "22.05.1985",
+  "geschlecht": "weiblich",
+  "gewicht": 65,
+  "groesse": 160,
+  "blutgruppe": "O-"
+}
+
+###
+PUT http://localhost:8080/api/v1/patientenakte?vorname=Anna&nachname=Schmidt&geburtsdatum=22.05.1985
+Content-Type: application/json
+
+{
+  "gewicht": 90
+}
+
+###
+DELETE http://localhost:8080/api/v1/patientenakte/1
+
+###
