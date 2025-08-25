@@ -1,1 +1,1 @@
-Eine Patientendatenbank mittels spring-boot, docker und postgres
+Eine Patientendatenbank in Java mittels spring-boot, docker und postgres
